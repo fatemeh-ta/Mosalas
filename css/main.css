@@ -1,0 +1,271 @@
+/*font added*/
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir.eot') format('embedded-opentype'),
+        url('../font/Vazir.woff2') format('woff2'),
+        url('../font/Vazir.woff') format('woff'),
+        url('../font/Vazir.ttf') format('truetype');
+    font-weight: normal;
+}
+  
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir-Bold.eot') format('embedded-opentype'),
+        url('../font/Vazir-Bold.woff2') format('woff2'),
+        url('../font/Vazir-Bold.woff') format('woff'),
+        url('../font/Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+  
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir-Thin.eot') format('embedded-opentype'),
+        url('../font/Vazir-Thin.woff2') format('woff2'),
+        url('../font/Vazir-Thin.woff') format('woff'),
+        url('../font/Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+}
+  
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir-Light.eot') format('embedded-opentype'),
+        url('../font/Vazir-Light.woff2') format('woff2'),
+        url('../font/Vazir-Light.woff') format('woff'),
+        url('../font/Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+}
+  
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir-Medium.eot') format('embedded-opentype'),
+        url('../font/Vazir-Medium.woff2') format('woff2'),
+        url('../font/Vazir-Medium.woff') format('woff'),
+        url('../font/Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+}
+  
+@font-face {
+    font-family:'Vazir';
+    src:url('../font/Vazir-Black.eot') format('embedded-opentype'),
+        url('../font/Vazir-Black.woff2') format('woff2'),
+        url('../font/Vazir-Black.woff') format('woff'),
+        url('../font/Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+}
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*header style*/
+header{
+    width:100%;
+    background-color: rgb(206, 22, 22);
+    padding: 50px;
+    text-align: right;
+    color: white;
+}
+/*Navigation style*/
+.nav{
+    background-color: rgb(78, 77, 77);
+    width:100%;
+    padding: 10px;
+    color: white;
+    text-align: center;
+}
+/*container*/
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container::after{
+    clear: both;
+    content: "";
+    display:table;
+}
+/*background body*/
+body{
+    background-color: rgb(230, 227, 227);
+    font-family: 'Vazir';
+}
+/*left box style*/
+.left{
+    width:100%;
+    background-color: rgb(238, 234, 201);
+    height:230px;
+    text-align: right;
+    margin-top: 1%;
+}
+/*left box header style*/
+.left ul{
+    list-style-type:none;
+    background-color:black;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.left ul li{
+    float:right;
+}
+
+.left ul li a{
+    color:white;
+    display:inline-block;
+    padding:5px;
+    font-size:9pt;
+}
+
+.border-color{
+    border-bottom: 1px solid red;
+}
+/*middle box style*/
+.middle{
+    width:100%;
+    text-align: right;
+    margin-top: 1%;
+}
+
+.news1{
+    width:100%;
+    margin-bottom: 1%;
+    background-color: palevioletred;
+    height:100px;
+}
+
+.news-special1{
+    width:100%;
+    margin-bottom: 1%;
+    background-color: rgb(245, 234, 87);
+    height:100px;
+}
+
+.news-special2{
+    width:100%;
+    margin-bottom: 1%;
+    background-color: rgb(245, 234, 87);
+    height:100px;
+}
+
+.titr2{
+    width:100%;
+    background-color: rgb(228, 181, 197);
+    height:250px;
+}
+/*right box style*/
+.right{
+    width:100%;
+    background-color: thistle;
+    height:230px;
+    padding:10px;
+    text-align: right;
+    margin-top:1%;
+}
+/*footer box style*/
+footer{
+    width:100%;
+    margin-top: 2%;
+    text-align: center;
+    color:white;
+    background-color: rgb(66, 64, 64);
+    padding:50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+@media screen and (min-width:600px){
+    .right{
+        float: right;
+        width:48%;
+        margin-left:1%;
+        height:550px;
+        margin-right:1%;
+    }
+
+    .middle{
+        float:left;
+        width:48%;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+
+@media screen and (min-width:900px){
+
+    .container{
+        width:60%;
+        float:right;
+        margin-right:10%;
+    }
+
+    main{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1%;
+    }
+
+    main::after{
+        clear:both;
+        content: "";
+        display: table;
+    }
+
+    .right{
+        float:right;
+        width:30%;
+        margin-top: 0;
+    }
+    
+    .left{
+        float:right;
+        width:20%;
+        margin-left:10%;
+        height:550px;
+        margin-top: 0;
+    }
+
+    .middle{
+        float:left;
+        width:65%;
+        margin-top:0;
+    }
+
+    .news-special1{
+        float:right;
+        width:48%;
+        overflow: hidden;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    .news-special2{
+        float:right;
+        width:48%;
+        overflow: hidden;
+        margin-left: 1%;
+        margin-right: 1%;
+        margin-top: 1%;
+    }
+
+    .container1{
+        width:100%;
+        background-color:rgb(236, 232, 232);
+    }
+
+    .container1::after{
+        clear:both;
+        content: "";
+        display: table;
+    }
+
+    .titr2{
+        margin-top:2%;
+    }
+}
