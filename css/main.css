@@ -44,15 +44,6 @@
     font-weight: 500;
 }
   
-@font-face {
-    font-family:'Vazir';
-    src:url('../font/Vazir-Black.eot') format('embedded-opentype'),
-        url('../font/Vazir-Black.woff2') format('woff2'),
-        url('../font/Vazir-Black.woff') format('woff'),
-        url('../font/Vazir-Black.ttf') format('truetype');
-    font-weight: 900;
-}
-
 *{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -67,7 +58,7 @@ header{
     color: white;
 }
 /*Navigation style*/
-.nav{
+nav{
     background-color: rgb(78, 77, 77);
     width:100%;
     padding: 10px;
@@ -92,7 +83,7 @@ body{
     font-family: 'Vazir';
 }
 /*left box style*/
-.left{
+.left-box{
     width:100%;
     background-color: rgb(238, 234, 201);
     height:230px;
@@ -100,7 +91,7 @@ body{
     margin-top: 1%;
 }
 /*left box header style*/
-.left ul{
+.left-box ul{
     list-style-type:none;
     background-color:black;
     margin:0;
@@ -108,11 +99,11 @@ body{
     overflow: hidden;
 }
 
-.left ul li{
+.left-box ul li{
     float:right;
 }
 
-.left ul li a{
+.left-box ul li a{
     color:white;
     display:inline-block;
     padding:5px;
@@ -123,7 +114,7 @@ body{
     border-bottom: 1px solid red;
 }
 /*middle box style*/
-.middle{
+.middle-box{
     width:100%;
     text-align: right;
     margin-top: 1%;
@@ -156,7 +147,7 @@ body{
     height:250px;
 }
 /*right box style*/
-.right{
+.right-box{
     width:100%;
     background-color: thistle;
     height:230px;
@@ -179,7 +170,7 @@ a{
 }
 
 @media screen and (min-width:600px){
-    .right{
+    .right-box{
         float: right;
         width:48%;
         margin-left:1%;
@@ -187,7 +178,7 @@ a{
         margin-right:1%;
     }
 
-    .middle{
+    .middle-box{
         float:left;
         width:48%;
         margin-left: 1%;
@@ -216,13 +207,13 @@ a{
         display: table;
     }
 
-    .right{
+    .right-box{
         float:right;
         width:30%;
         margin-top: 0;
     }
     
-    .left{
+    .left-box{
         float:right;
         width:20%;
         margin-left:10%;
@@ -230,7 +221,7 @@ a{
         margin-top: 0;
     }
 
-    .middle{
+    .middle-box{
         float:left;
         width:65%;
         margin-top:0;
@@ -254,12 +245,12 @@ a{
         margin-top: 1%;
     }
 
-    .container1{
+    .news-special{
         width:100%;
         background-color:rgb(236, 232, 232);
     }
 
-    .container1::after{
+    .news-special::after{
         clear:both;
         content: "";
         display: table;
