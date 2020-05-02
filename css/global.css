@@ -1,0 +1,47 @@
+  *{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container::after {
+  clear: both;
+  content: "";
+  display:table;
+}
+
+.main-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 8px;
+}
+
+.margin-top {
+  margin-top : 16px;
+}
+
+.margin-bottom {
+  margin-bottom : 16px;
+}
+
+.margin-top-bt {
+  margin : 16px 0;
+}
+
+.padding-top {
+  padding-top : 16px;
+}
+
+.padding-bottom {
+  padding-bottom : 16px;
+}
+
+.padding-top-bt {
+  padding : 16px 0;
+}
