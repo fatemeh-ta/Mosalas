@@ -1,5 +1,7 @@
 @import url("../css/global.css");
 
+@import url("../css/all.css");
+
 @font-face {
   font-family:'Vazir';
   src:url('../font/Vazir.eot') format('embedded-opentype'),
@@ -44,6 +46,7 @@
       url('../font/Vazir-Medium.ttf') format('truetype');
   font-weight: 500;
 }
+
 /*body*/
 body {
   background-color: rgb(230, 227, 227);
@@ -59,9 +62,24 @@ body {
 }
 
 .icon-box{
-  background-color: lightgray;
-  width:30%;
+  width:100%;
   float:left;
+}
+
+.ul-fa{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.ul-fa li {
+  float: left;
+  padding-right: 8px;
+  font-size: large;
+}
+
+.ul-fa li a {
+  color:white;
 }
 
 .logo-time-search{
@@ -87,6 +105,26 @@ body {
 .search-box {
   width:100%;
   background-color: maroon;
+  position: relative;
+}
+
+a[title="جستجو"] {
+  color:white;
+}
+
+input[placeholder="جستجو"]{
+  width:100%;
+  border:1px solid transparent;
+  padding:8px;
+  border-radius: 0;
+  background-color: rgb(218, 186, 186);
+  color:white;
+}
+
+.fa-search{
+  position: absolute;
+  left:15px;
+  top:8px;
 }
 
 @media screen and (min-width:600px){
@@ -203,4 +241,92 @@ body {
 /* main-footer */
 .main-footer {
   background-color: #444;
+  text-align: center;
 }
+
+.menu-box-footer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width:100%
+}
+
+.menu-bar-footer{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  background-color: black ; 
+}
+/*icon class*/
+.circle {
+  color: red;
+  font-size:3pt;
+  padding-left:4px;
+}
+
+.menu-bar-footer li {
+  padding-left: 8px;
+  display: inline-block;  
+}
+
+.menu-bar-footer li a{
+  color:white;
+  text-decoration: none;
+  font-size: small; 
+}
+
+.about-me {
+  text-align:center;
+}
+
+.ul-about-me{
+  list-style-type: none;
+  padding:0;
+  margin: 0;
+}
+
+.ul-about-me li{
+  display:inline-block;
+  padding-left:8px;
+}
+
+.ul-about-me li a {
+  color:white;
+  font-size: small;
+  text-decoration:none;
+}
+
+.icon-box-footer{
+  width:100%;
+}
+
+.ul-fa-footer{
+  list-style-type: none;
+  margin:0;
+  padding:0;
+}
+
+.ul-fa-footer li {
+  display: inline-block;
+  padding-right: 8px;
+  font-size: small;
+}
+
+.ul-fa-footer li a {
+  color:white;
+}
+
+.copy-right {
+  color:red;
+  font-size: small;
+}
+
+.asam{
+  font-size:xx-small;
+}
+
+.asam a {
+  color:white;
+  text-decoration: none;
+} 
+
