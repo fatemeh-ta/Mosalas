@@ -60,7 +60,7 @@ body {
   text-align: right;
   color: white;
 }
-
+/*STYLE HEADER ICON*/
 .icon-box{
   width:100%;
   float:left;
@@ -85,7 +85,7 @@ body {
 .logo-time-search{
   width:100%;
 }
-
+/*LOGO STYLE*/
 .logo-box{
  margin-left: auto;
  margin-right: auto;
@@ -96,12 +96,12 @@ body {
   width: 190px;
   height:73px;
 }
-
+/*TIME BOX*/
 .time-box {
   width:100%;
   background-color: lime;
 }
-
+/*SEARCH BOX*/
 .search-box {
   width:100%;
   background-color: maroon;
@@ -121,7 +121,7 @@ input[placeholder="جستجو"]{
   color:white;
 }
 
-.fa-search{
+.pos-search{
   position: absolute;
   left:15px;
   top:8px;
@@ -185,7 +185,6 @@ input[placeholder="جستجو"]{
     border-bottom: 3px solid red;
   }
 }
-
 
 /*------Start first column---------*/
 .first-col {
@@ -257,8 +256,8 @@ input[placeholder="جستجو"]{
   padding:0;
   background-color: black ; 
 }
-/*icon class*/
-.circle {
+/*icon class for footer menu*/
+.circle-icon {
   color: red;
   font-size:3pt;
   padding-left:4px;
@@ -274,7 +273,7 @@ input[placeholder="جستجو"]{
   text-decoration: none;
   font-size: small; 
 }
-
+/*MENU BOX STYLE*/
 .about-me {
   text-align:center;
 }
@@ -295,7 +294,7 @@ input[placeholder="جستجو"]{
   font-size: small;
   text-decoration:none;
 }
-
+/*ICON FOOTER STYLE*/
 .icon-box-footer{
   width:100%;
 }
@@ -315,12 +314,12 @@ input[placeholder="جستجو"]{
 .ul-fa-footer li a {
   color:white;
 }
-
+/*COPY RIGHT STYLE*/
 .copy-right {
   color:red;
   font-size: small;
 }
-
+/*ASAAM*/
 .asam{
   font-size:xx-small;
 }
