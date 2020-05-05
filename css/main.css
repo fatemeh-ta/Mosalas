@@ -1,6 +1,6 @@
 @import url("../css/global.css");
 
-@import url("../css/all.css");
+@import url("../css/font-awesome.min.css");
 
 @font-face {
   font-family:'Vazir';
@@ -45,6 +45,16 @@
       url('../font/Vazir-Medium.woff') format('woff'),
       url('../font/Vazir-Medium.ttf') format('truetype');
   font-weight: 500;
+}
+
+@font-face {
+  font-family:'FontAwesome';
+  src:url('../font/fonts/fontawesome-webfont.eot') format('embedded-opentype'),
+      url('../font/fonts/fontawesome-webfont.woff2') format('woff2'),
+      url('../font/fonts/fontawesome-webfont.woff') format('woff'),
+      url('../font/fonts/fontawesome-webfont.ttf') format('truetype'),
+      url('../font/fonts/fontawesome-webfont.svg') format('svg'),
+      url('../font/fonts/FontAwesome.otf') format('otf');
 }
 
 /*body*/
