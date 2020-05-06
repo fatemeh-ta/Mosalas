@@ -56,7 +56,6 @@
       url('../font/fonts/fontawesome-webfont.svg') format('svg'),
       url('../font/fonts/FontAwesome.otf') format('otf');
 }
-
 /*body*/
 body {
   background-color: rgb(230, 227, 227);
