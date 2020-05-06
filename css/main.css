@@ -1,6 +1,6 @@
 @import url("../css/global.css");
 
-@import url("../css/font-awesome.min.css");
+@import url("../css/font-awesome/font-awesome.min.css");
 
 @font-face {
   font-family:'Vazir';
@@ -65,9 +65,17 @@ body {
 /*header style*/
 .main-header {
   width:100%;
-  background-color: rgb(206, 22, 22);
+  background-attachment: fixed;
   text-align: right;
   color: white;
+  background-color: #aa1f26;
+}
+
+.header-bkground {
+  background-image:url("../images/shape-banner.png");
+  background-repeat: no-repeat;
+  background-color: #aa1f26;
+  background-position: 26% -17%;
 }
 /*STYLE HEADER ICON*/
 .icon-box{
@@ -108,12 +116,17 @@ body {
 /*TIME BOX*/
 .time-box {
   width:100%;
-  background-color: lime;
+  padding:8px
+}
+/*CIRCLE ICON STYLE */
+.circle-color {
+  color:white;
+  font-size: xx-small;
 }
 /*SEARCH BOX*/
 .search-box {
   width:100%;
-  background-color: maroon;
+  background-color:#ffffff;
   position: relative;
 }
 
@@ -126,17 +139,30 @@ input[placeholder="جستجو"]{
   border:1px solid transparent;
   padding:8px;
   border-radius: 0;
-  background-color: rgb(218, 186, 186);
-  color:white;
+  background-color:#f0f0f0;
+  color:#797979;
 }
-
+/*SEARCH ICON STYLE*/
 .pos-search{
   position: absolute;
   left:15px;
   top:8px;
+  color:#857f7f
 }
 
 @media screen and (min-width:600px){
+  .logo-box{
+    width:45%;
+    float:right;
+  }
+
+  .time-search{
+    width:55%;
+    float:left;
+  }
+}
+
+@media screen and (min-width:768px){
   .logo-box{
     width:60%;
     float:right;
@@ -145,20 +171,25 @@ input[placeholder="جستجو"]{
   .time-search{
     width:40%;
     float:left;
-    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width:1020px){
+  .logo-box{
+    width:70%;
+    float:right;
+  }
+
+  .time-search{
+    width:30%;
+    float:left;
   }
 }
 /*Navigation style*/
 .main-nav {
-  background-color: rgb(78, 77, 77);
+  background-color: #444444;
   width:100%;
   color: white;
-  text-align: center;
-}
-
-.main-nav a {
-  text-decoration: none;
-  color:white;
   text-align: center;
 }
 
@@ -166,10 +197,26 @@ input[placeholder="جستجو"]{
   list-style-type: none;
   padding: 0;
   margin: 0;
-  display:none;
 }
 
-@media screen and (min-width:900px){
+.menu-bar li a{
+  display:block;
+  padding-left:16px;
+  font-size: small;
+  padding:8px;
+  text-decoration:none;
+  color:white;
+}
+
+.main-nav a:hover {
+  background-color: #333333;
+}
+
+.bkgd-color {
+  background-color: #333333;
+}
+
+@media screen and (min-width:800px){
 
   .main-nav a {
     display:none;
@@ -194,12 +241,12 @@ input[placeholder="جستجو"]{
     border-bottom: 3px solid red;
   }
 }
-
 /*------Start first column---------*/
 .first-col {
   width: 100%;
   background-color: rgb(224, 158, 71);
 }
+
 .second-col {
   width: 100%;
   background-color: rgb(71, 214, 224);
