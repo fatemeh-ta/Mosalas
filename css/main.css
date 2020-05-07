@@ -71,32 +71,40 @@ body {
   background-color: #aa1f26;
 }
 
-.header-bkground {
+.main-header-background {
   background-image:url("../images/shape-banner.png");
   background-repeat: no-repeat;
   background-color: #aa1f26;
   background-position: 26% -17%;
 }
 /*STYLE HEADER ICON*/
-.icon-box{
+.global-icon{
   width:100%;
   float:left;
+  text-align: center;
 }
 
-.ul-fa{
+.social-icon{
   list-style-type: none;
   margin:0;
   padding:0;
 }
 
-.ul-fa li {
-  float: left;
+.social-icon li {
+  display: inline-block;
   padding-right: 8px;
-  font-size: large;
+  font-size: 1.0em;
+  text-align: left;
 }
 
-.ul-fa li a {
+.social-icon li a {
   color:white;
+}
+
+@media screen and (min-width:600px) {
+  .global-icon {
+    text-align: left;
+  }
 }
 
 .logo-time-search{
@@ -107,6 +115,7 @@ body {
  margin-left: auto;
  margin-right: auto;
  width:50%;
+ text-align: center;
 }
 
 .logo-size {
@@ -116,25 +125,26 @@ body {
 /*TIME BOX*/
 .time-box {
   width:100%;
-  padding:8px
+  padding:8px;
+  text-align: center;
 }
 /*CIRCLE ICON STYLE */
-.circle-color {
+.circle-icon-color {
   color:white;
-  font-size: xx-small;
+  font-size: 0.5em;
 }
 /*SEARCH BOX*/
 .search-box {
   width:100%;
   background-color:#ffffff;
+}
+
+.search-box form{
   position: relative;
+  width:100%;
 }
 
-a[title="جستجو"] {
-  color:white;
-}
-
-input[placeholder="جستجو"]{
+.search-box input {
   width:100%;
   border:1px solid transparent;
   padding:8px;
@@ -142,19 +152,26 @@ input[placeholder="جستجو"]{
   background-color:#f0f0f0;
   color:#797979;
 }
-/*SEARCH ICON STYLE*/
-.pos-search{
-  position: absolute;
-  left:15px;
+
+.search-box button {
+  position:absolute;
+  left:10px;
   top:8px;
-  color:#857f7f
+  background-color: transparent;
+  border:none;
 }
 
+/*SEARCH ICON STYLE*/
 @media screen and (min-width:600px){
   .logo-box{
     width:45%;
     float:right;
+    text-align: right;
   }
+
+  .time-box {
+    text-align: right;
+  } 
 
   .time-search{
     width:55%;
@@ -163,9 +180,11 @@ input[placeholder="جستجو"]{
 }
 
 @media screen and (min-width:768px){
+
   .logo-box{
     width:60%;
     float:right;
+    text-align: right;
   }
 
   .time-search{
@@ -199,47 +218,43 @@ input[placeholder="جستجو"]{
   margin: 0;
 }
 
-.menu-bar li a{
+.menu-bar li:first-child {
+  background-color: #333333;
+}
+
+.menu-bar li a {
   display:block;
   padding-left:16px;
-  font-size: small;
+  font-size: 0.8em;
   padding:8px;
   text-decoration:none;
   color:white;
 }
 
-.main-nav a:hover {
-  background-color: #333333;
-}
-
-.bkgd-color {
+.menu-bar a:hover {
   background-color: #333333;
 }
 
 @media screen and (min-width:800px){
 
-  .main-nav a {
-    display:none;
+  .main-nav {
+    text-align: right;
   }
 
-  .menu-bar {
-    display:block;
-  }
-
-  .menu-bar li{
-    float:right;
+  .menu-bar li {
+    display:inline-block
   }
 
   .menu-bar li a{
     display:inline-block;
-    padding-left:16px;
-    font-size: small;
+    font-size: 0.8em;
     padding:8px;
   }
 
-  .border-red{
+  .menu-bar li:first-child {
+    background-color: #333333;
     border-bottom: 3px solid red;
-  }
+  } 
 }
 /*------Start first column---------*/
 .first-col {

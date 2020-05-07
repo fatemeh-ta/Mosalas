@@ -13,21 +13,16 @@
       <div class="main-wrapper">
         <div class="container">
           <!--START ICON BOX-->
-          <div class="icon-box margin-top">
-            <ul class="container ul-fa">
+          <div class="global-icon margin-top">
+            <ul class="container social-icon">
               <li>
-                <a href="#" title="فید">
-                  <i class="fa fa-rss" aria-hidden="true"></i>                 
+                <a href="#" title="گوگل پلاس">
+                  <i class="fa fa-google-plus" aria-hidden="true"></i>                  
                 </a>
               </li>
               <li>
-                <a href="#" title="توییتر">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>                 
-                </a>
-              </li>
-              <li>
-                <a href="#" title="فیس بوک">
-                  <i class="fa fa-facebook" aria-hidden="true"></i>                 
+                <a href="#" title="اینسناگرام">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>                 
                 </a>
               </li>
               <li>
@@ -36,13 +31,18 @@
                 </a>
               </li> 
               <li>
-                <a href="#" title="اینسناگرام">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>                 
+                <a href="#" title="فیس بوک">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>                 
+                </a>
+              </li>
+              <li>
+                <a href="#" title="توییتر">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>                 
                 </a>
               </li> 
               <li>
-                <a href="#" title="گوگل پلاس">
-                  <i class="fa fa-google-plus" aria-hidden="true"></i>                  
+                <a href="#" title="فید">
+                  <i class="fa fa-rss" aria-hidden="true"></i>                 
                 </a>
               </li>      
             </ul>
@@ -52,7 +52,7 @@
       </div>
     </div>
      <!--START HEADER-->
-    <header class="main-header header-bkground">
+    <header class="main-header main-header-background">
       <div class="main-wrapper">  
         <div class="logo-time-search">
           <div class="container padding-top-bt">
@@ -65,15 +65,17 @@
               <!--START TIME BOX-->
               <div class="time-box">
                 <time> چهارشنبه ۱۷ اردیبهشت۱۳۹۹ </time>
-                <i class="fa fa-circle circle-color" aria-hidden="true" ></i>
+                <i class="fa fa-circle circle-icon-color" aria-hidden="true" ></i>
                 <time>  May 2020 06 </time>
               </div>
               <!--START SERACH BOX-->
               <div class="search-box">
-                <input type="text" id="text" placeholder="جستجو">
-                <a href="#" title="جستجو">
-                  <i class="fa fa-search pos-search" aria-hidden="true"></i>
-                </a>               
+                <form class="form-search-box">
+                  <input placeholder="جستجو" type="text" value="جستجو">
+                    <button type="submit" id="search-submit">
+                       <i class="fa fa-search"></i>
+                    </button>
+                </form>                         
               </div> 
               <!--END SEARCH BOX-->           
             </div>
@@ -84,8 +86,8 @@
       <nav class="main-nav">
         <div class="main-wrapper">
           <ul class="container menu-bar">
-            <li class="bkgd-color">
-              <a title="صفحه نخست" href="#" class="border-red"> صفحه نخست</a>
+            <li>
+              <a title="صفحه نخست" href="#"> صفحه نخست</a>
             </li>
             <li>
               <a title="اخبار" href="#">اخبار</a>
