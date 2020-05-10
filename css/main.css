@@ -92,7 +92,6 @@ body {
 
 .social-icon li {
   display: inline-block;
-  padding-right: 8px;
   font-size: 1.0em;
   text-align: left;
 }
@@ -127,6 +126,7 @@ body {
   width:100%;
   padding:8px;
   text-align: center;
+  font-size:0.9em;
 }
 /*CIRCLE ICON STYLE */
 .circle-icon-color {
@@ -254,7 +254,7 @@ body {
 
   .menu-bar li:first-child {
     background-color: #333333;
-    border-bottom: 3px solid red;
+    border-bottom: 3px solid #ce1010;
   } 
 }
 /*------Start first column---------*/
@@ -310,6 +310,9 @@ body {
   margin-right: auto;
 }
 
+.header-special-conversation {
+  border-bottom: 1px solid #e2e2e2;
+}
 .special-conversation-content {
   padding:8px;
 }
@@ -333,12 +336,12 @@ body {
   color:#fff;
 }
 
-.detail-special-box .uptitle a{
+.detail-special-box .uptitle {
   color:#e599b5; 
 }
 
 .detail-special-box .title a{
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 
 @media screen and (min-width:520px){
@@ -348,9 +351,9 @@ body {
 
   .special-conversation-list li {
     width:50%;
-    padding-right:3px;
     float:right;
     margin-top: 0;
+    border:1px solid #fff;
   }
 }
 
