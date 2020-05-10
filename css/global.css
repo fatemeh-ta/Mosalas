@@ -49,21 +49,15 @@
 .responsive-img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
-a .responsive-img { 
+.block {
   display:block;
 }
 
 .global-box-detail {
   box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding:8px;
-  background-color: #ffffff;
-}
-
-.global-box-detail-with-title {
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-  padding:0 0 8px 8px;
   background-color: #ffffff;
 }
 
