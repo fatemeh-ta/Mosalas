@@ -338,11 +338,14 @@ body {
 
 .detail-special-box .uptitle {
   color:#e599b5; 
+  font-size: 0.8em;
 }
 
 .detail-special-box .title a{
   line-height: 1.7em;
+  font-size: 0.9em;
 }
+
 
 @media screen and (min-width:520px){
   .detail-special-box {
