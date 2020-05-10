@@ -316,21 +316,19 @@ body {
   padding: 2px 8px;
   color:#fff;
   text-align: center;
-  min-height:140px;  
+  min-height:180px;  
 }
 
 .detail-special-box a {
   color:#fff;
 }
 
-.detail-special-content p{
+.detail-special-box .uptitle a{
   color:#e599b5; 
-  font-size:0.8em; 
 }
 
-.detail-special-content h5{
+.detail-special-box .title a{
   line-height: 1.4em;
-  font-size:0.90em;
 }
 
 @media screen and (min-width:520px){
