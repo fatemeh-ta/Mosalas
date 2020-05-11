@@ -326,7 +326,7 @@ body {
 .detail-special-box {
   width:100%;
   background-color: #2c2c2c;
-  padding: 4px 8px;
+  padding: 8px 12px;
   color:#fff;
   text-align: center;
   min-height:180px;  
@@ -339,11 +339,16 @@ body {
 .detail-special-box .uptitle {
   color:#e599b5; 
   font-size: 0.8em;
+  padding-top:10px;
 }
 
 .detail-special-box .title a{
   line-height: 1.7em;
   font-size: 0.9em;
+}
+
+.detail-special-box .title {
+  padding-top:8px;
 }
 
 
@@ -357,6 +362,87 @@ body {
     float:right;
     margin-top: 0;
     border:1px solid #fff;
+  }
+}
+/*START TITR-SECOND BOX*/
+.second-titr {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-second-titr {
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.second-titr-list {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+}
+
+.second-titr-list > li {
+  border-bottom: 1px solid #e2e2e2;
+  padding:10px;
+  max-width: 100%;
+}
+
+.second-titr-img {
+  width:100%;
+}
+
+.second-titr-img img{
+  width:100%;
+  display: block;
+  height: auto;
+  
+}
+
+.second-titr-content {
+  width:100%;
+  text-align: center;
+  padding-top: 8px;
+}
+
+.second-titr-content .subtitle {
+  color:#4e784a;
+  font-size: 0.8em; 
+  padding-bottom: 5px; 
+}
+
+.second-titr-content .title {
+  font-size:1.0em;
+  line-height: 1.7em;
+  padding-bottom: 5px;
+}
+
+.second-titr-content .lead {
+  line-height: 1.7em;
+  font-size: 0.8em;
+  color: #857a78;
+}
+
+.second-titr-content a {
+  color:#433a3d;
+}
+
+.archive-box {
+  width:100%;
+  text-align: center;
+  padding:20px 0px;
+}
+
+@media screen and (min-width:600px){
+
+  .second-titr-img {
+    width:30%;
+    float:right;
+  }
+
+  .second-titr-content {
+    width:70%;
+    float:left;
+    text-align: right;
+    padding-right:8px;
   }
 }
 
