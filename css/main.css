@@ -82,6 +82,7 @@ body {
   width:100%;
   float:left;
   text-align: center;
+  padding-top:8px;
 }
 
 .social-icon{
@@ -126,7 +127,7 @@ body {
   width:100%;
   padding:8px;
   text-align: center;
-  font-size:0.9em;
+  font-size:0.85em;
 }
 /*CIRCLE ICON STYLE */
 .circle-icon-color {
@@ -155,11 +156,11 @@ body {
 
 .form-search-box button {
   position:absolute;
-  left:10px;
-  top:7px;
+  left:5px;
+  top:5px;
+  bottom: 5px;
   background-color: transparent;
   border:none;
-  padding-top:3px;
 }
 
 /*SEARCH ICON STYLE*/
@@ -225,31 +226,24 @@ body {
 
 .menu-bar li a {
   display:block;
-  padding-left:16px;
-  font-size: 0.8em;
-  padding:8px;
   text-decoration:none;
   color:white;
+  padding:8px 10px;
+  font-size:0.95em;
 }
 
-.menu-bar a:hover {
+.menu-bar li:hover {
   background-color: #333333;
 }
 
-@media screen and (min-width:800px){
+@media screen and (min-width:950px){
 
   .main-nav {
     text-align: right;
   }
 
   .menu-bar li {
-    display:inline-block
-  }
-
-  .menu-bar li a{
     display:inline-block;
-    font-size: 0.8em;
-    padding:8px;
   }
 
   .menu-bar li:first-child {
@@ -512,8 +506,8 @@ body {
 }
 /*icon class for footer menu*/
 .circle-icon {
-  color: red;
-  font-size:3pt;
+  color:#c8251c;
+  font-size:0.3em;
   padding-left:4px;
 }
 
@@ -523,9 +517,9 @@ body {
 }
 
 .menu-bar-footer li a{
-  color:white;
+  color:#fff;
   text-decoration: none;
-  font-size: small; 
+  font-size: 0.8em; 
 }
 /*MENU BOX STYLE*/
 .about-me {
