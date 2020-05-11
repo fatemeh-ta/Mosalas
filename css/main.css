@@ -365,6 +365,8 @@ body {
 
 .header-second-titr {
   border-bottom: 1px solid #e2e2e2;
+  padding:0;
+  margin:0;
 }
 
 .second-titr-list {
@@ -375,7 +377,7 @@ body {
 
 .second-titr-list > li {
   border-bottom: 1px solid #e2e2e2;
-  padding:10px;
+  padding:8px;
   max-width: 100%;
 }
 
@@ -386,14 +388,12 @@ body {
 .second-titr-img img{
   width:100%;
   display: block;
-  height: auto;
-  
+  height: auto;  
 }
 
 .second-titr-content {
   width:100%;
   text-align: center;
-  padding-top: 8px;
 }
 
 .second-titr-content .subtitle {
@@ -405,23 +405,23 @@ body {
 .second-titr-content .title {
   font-size:1.0em;
   line-height: 1.7em;
-  padding-bottom: 5px;
+  padding-bottom: 6px;
 }
 
 .second-titr-content .lead {
-  line-height: 1.7em;
+  line-height: 1.5em;
   font-size: 0.8em;
   color: #857a78;
 }
 
 .second-titr-content a {
-  color:#433a3d;
+  color:#30413b;
 }
 
 .archive-box {
   width:100%;
   text-align: center;
-  padding:20px 0px;
+  padding:15px 0px;
 }
 
 @media screen and (min-width:600px){
@@ -435,7 +435,7 @@ body {
     width:70%;
     float:left;
     text-align: right;
-    padding-right:8px;
+    padding-right:14px;
   }
 }
 
