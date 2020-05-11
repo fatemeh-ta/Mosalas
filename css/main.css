@@ -107,7 +107,7 @@ body {
   }
 }
 
-.logo-time-search{
+.logo-time-search {
   width:100%;
 }
 /*LOGO STYLE*/
@@ -157,8 +157,7 @@ body {
 .form-search-box button {
   position:absolute;
   left:5px;
-  top:5px;
-  bottom: 5px;
+  top:10px;
   background-color: transparent;
   border:none;
 }
