@@ -213,10 +213,27 @@ body {
   text-align: center;
 }
 
+.toggle {
+  display:block;
+  font-size:1.7em;
+  padding:8px;
+  width:100%;
+  box-sizing: border-box;
+}
+
 .menu-bar {
   list-style-type: none;
   padding: 0;
   margin: 0;
+}
+
+.menu-bar {
+  display:none;
+  width:100%;
+}
+
+.menu-bar li {
+  display:block;
 }
 
 .menu-bar li:first-child {
@@ -241,10 +258,18 @@ body {
     text-align: right;
   }
 
-  .menu-bar li {
+  .menu-bar {
     display:inline-block;
   }
 
+  .toggle {
+    display:none;
+  }
+
+  .menu-bar li {
+    display: inline-block;
+  }
+ 
   .menu-bar li:first-child {
     background-color: #333333;
     border-bottom: 3px solid #ce1010;
@@ -288,6 +313,12 @@ body {
 .top-news-header .title > a {
   font-size: 0.75em;
   color: #1a7e43;
+  transition: 2s;
+}
+
+.top-news-header:hover .title > a {
+  font-size: 0.75em;
+  color: #0deb69;
 }
 
 .top-news-header .lead {
@@ -306,6 +337,12 @@ body {
 .header-special-conversation {
   border-bottom: 1px solid #e2e2e2;
 }
+
+.header-special-conversation:hover .global-title-section a {
+  color:#dac0c0;
+  transition-duration: 2s;
+}
+
 .special-conversation-content {
   padding:8px;
 }
@@ -325,8 +362,9 @@ body {
   min-height:180px;  
 }
 
-.detail-special-box a {
-  color:#fff;
+.special-conversation-list li:hover .detail-special-box .title a {
+  color:#c7bdc1;
+  transition:2s;
 }
 
 .detail-special-box .uptitle {
@@ -335,15 +373,15 @@ body {
   padding-top:10px;
 }
 
-.detail-special-box .title a{
-  line-height: 1.7em;
-  font-size: 0.9em;
-}
-
 .detail-special-box .title {
   padding-top:8px;
 }
 
+.detail-special-box .title a{
+  line-height: 1.7em;
+  font-size: 0.9em;
+  color:#fff;
+}
 
 @media screen and (min-width:520px){
   .detail-special-box {
@@ -367,6 +405,11 @@ body {
   border-bottom: 1px solid #e2e2e2;
   padding:0;
   margin:0;
+}
+
+.header-second-titr:hover .global-title-section a {
+  color:#c7bdc1;
+  transition:2s;
 }
 
 .second-titr-list {
@@ -407,6 +450,11 @@ body {
   font-size:1.0em;
   line-height: 1.7em;
   padding-bottom: 6px;
+}
+
+.second-titr-list  li:hover .second-titr-content .title a {
+  color:#5a1905;
+  transition: 1s;
 }
 
 .second-titr-content .lead {
@@ -476,6 +524,11 @@ body {
   padding:0;
 }
 
+.header-review-section:hover .global-title-section a {
+  color:#c7bdc1;
+  transition:2s;
+}
+
 .review-list {
   list-style-type: none;
   padding: 0;
@@ -532,6 +585,11 @@ body {
 
 .review-title  a {
   color:#424d53;  
+}
+
+.review-list > li:hover .review-title  a {
+  color:#051958;  
+  transition: 1s;
 }
 
 .review-author {
@@ -602,6 +660,13 @@ body {
 
 .header-latest-list  li a {
   color:#fff;
+}
+
+.header-latest-list li a:hover {
+  color:#e20e24;
+  transition:1s;
+  transition: 1s;
+  transition-timing-function: ease-in;
 }
 
 .latest-news-content {
