@@ -3,15 +3,28 @@ $(document).ready(function(){
   $(".menu-icon").click(function(){
     $(".menu-bar").slideToggle();
   })
-})
 /*SLIDE SHOW*/
-$(document).ready(function() {
   $('#slide-pic').lightSlider({
     adaptiveHeight:true,
     item:1,
     slideMargin:0,
     loop:true
   });
+//---------- CHANGE FONT ----------
+$('#incfont').click(function () {
+  curSize = parseInt($('.editor-detail *p').css('font-size')) + 2;
+
+if (curSize <= 25)
+  $('.editor-detail *').css('font-size', curSize);
+});
+
+$('#decfont').click(function () {
+  curSize = parseInt($('.editor-detail *p').css('font-size')) - 2;
+
+  if (curSize >= 9)
+  $('.editor-detail *').css('font-size', curSize);
+});
+//---------- END OF CHANGE FONT ----------
 });
 /*Counter*/ 
 var count = (function() {
@@ -30,28 +43,7 @@ var countunlike = (function() {
 function displayunlike() {
   document.getElementById("unlike").innerHTML=countunlike();
 }
-/*ZOOMIN ZOOM10*/
-function zoomin() {
-  var mynews=document.getElementById("body");
-  var currwidth=mynews.clientWidth;
-  if (currwidth==1000) {
-    alart ("Maximum zoom in");
-  }
-  else {
-  mynews.style.fontSize=(currwidth+0.1)+"px";  
-  }
-}
-/*ZOOMIN ZOOMOUT*/
-function zoomout() {
-  var mynews=document.getElementById("body");
-  var currwidth=mynews.clientWidth;
-  if (currwidth==40) {
-    alart ("Maximum zoom out");
-  }
-  else {
-    mynews.style.width=(currwidth-40)+"px"; 
-  }
-}
+ 
 
 
 
