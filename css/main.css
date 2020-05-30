@@ -1116,6 +1116,7 @@ body {
   font-size: 0.88em;
   line-height: 1.7em;
   font-weight: bold;
+  color: #000;
 }
 
 .n-special {
@@ -1305,6 +1306,10 @@ body {
 .related-news-list li {
   padding:8px;
   border-bottom: 1px solid #f0f0f0;
+}
+
+.related-news-list li:last-child {
+  border-bottom: none;
 }
 
 .related-news-list li a {
@@ -1624,7 +1629,10 @@ body {
   width: 100%;
 }
 
-.l-news-title }
+.l-news-title {
+  width: 100%;
+  color: #3f7e43;
+}
 
 .Cultural {
   width: 100%;
